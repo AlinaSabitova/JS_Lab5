@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>График курса валют</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Курс валют</h1>
+    <div class="controls">
+        <label for="currency">Выберите валюту:</label>
+        <select id="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+        <label for="startDate">Начальная дата:</label>
+        <input type="date" id="startDate">
+        <label for="endDate">Конечная дата:</label>
+        <input type="date" id="endDate">
+        <button id="showChartButton">Показать график</button>
+    </div>
+
+    <canvas id="fluctuationChart" width="1200" height="450"></canvas>
+  
+    <script src="script.js"></script>
+</body>
+</html>
+
+ 
+
+
+
+
+
+
