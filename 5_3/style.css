@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F0FFF0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px; 
+}
+
+.tag-system {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; 
+}
+
+#articleSelect {
+  margin-right: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.article {
+  background-color: #F0FFFF;
+  border: 2px solid #007bff;
+  border-radius: 3px;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: justify;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.tag .remove-tag {
+  margin-left: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+#addTagButton {
+  background-color: #28a745;
+  color: white;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+#addTagButton:hover {
+  background-color: #1E7D34;
+}
+
+.tag-search {
+  margin-top: 30px; 
+  display: flex; /* Выстраиваем элементы в строку */
+  gap: 10px; /* Расстояние между элементами */
+  margin-bottom: 10px;
+}
+
+#searchTagInput {
+  width: 300px; /* Ширина поля ввода */
+  padding: 7px 10px; 
+  font-size: 14px; 
+  border: 2px solid #007bff; 
+  border-radius: 3px; 
+}
+
+#searchTagButton {
+  background-color: #007bff; 
+  color: white; 
+  padding: 7px 10px; 
+  border: none; 
+  border-radius: 3px; 
+  font-size: 14px;
+  cursor: pointer; 
+}
+
+#searchTagButton:hover {
+  background-color: #0056b3; 
+}
