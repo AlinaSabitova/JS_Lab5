@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра Виселица</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Игра Виселица</h1>
+    
+    <div id="game">
+        <div id="selectedTheme" style="font-size: 18px; margin-top: 10px; margin-bottom: 10px;"></div>
+        <img id="hangmanImage" src="images/hangman0.png" alt="Виселица" />
+        <div id="wordDisplay"></div>
+        <div>
+        	<span>Осталось попыток: </span><span id="remainingAttempts"></span>
+        </div>
+        	<div id="letterButtons"></div>
+        	<button id="restartButton" style="display: none;" onclick="restartGame()">Начать заново</button>
+        </div>
+
+    <div id="themeSelection">
+        <button onclick="startGame('food')">Еда</button>
+        <button onclick="startGame('animals')">Животные</button>
+        <button onclick="startGame('flora')">Растения</button>
+        <button onclick="startGame('clothes')">Одежда</button>
+        <button onclick="startGame('sport')">Спорт</button>
+        <button onclick="startGame('city')">Города</button>
+        <button onclick="startGame('countries')">Страны</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

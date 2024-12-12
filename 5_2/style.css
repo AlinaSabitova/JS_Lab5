@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #F0FFF0;
+}
+
+h1 {
+  color: #3CB371;
+}
+
+#wordDisplay {
+  font-size: 28px;
+}
+
+#remainingAttempts {
+  font-size: 18px;
+}
+
+#game {
+  display: none;
+}
+
+#game > div {
+  margin-top: 20px; /* Устанавливаем отступ сверху для родительского div */
+}
+
+#letterButtons {
+  display: grid; /* Используем grid для расположения кнопок */
+  grid-template-columns: repeat(11, 50px); /* Три колонки фиксированной ширины */
+  gap: 5px; /* Отступы между кнопками */
+  justify-content: center; /* Центрируем сетку по горизонтали */
+}
+
+#letterButtons button {
+  width: 50px; 
+  height: 50px; 
+  font-size: 24px; 
+  background-color: #4CAF50;
+  color: white;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+#letterButtons button:hover {
+  color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+#themeSelection {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+#themeSelection button {
+  width: 200px; 
+  padding: 15px;
+  font-size: 18px;
+  margin: 10px; 
+  background-color: #4CAF50; 
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+#themeSelection button:hover {
+  background-color: #45a049; 
+}
+
+#restartButton {
+  font-size: 24px; 
+  padding: 10px 15px;
+  background-color: #4682B4; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin: 20px auto;
+}
+
+#restartButton:hover {
+  background-color: #356287; 
+}
